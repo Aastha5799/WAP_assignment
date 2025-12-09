@@ -118,7 +118,6 @@ button{
     font-weight: bold;
     cursor: pointer;
     width: 40%;
-    
 }
 
 .aside-content{
@@ -163,7 +162,7 @@ ol li{
 
 dt{
     font-weight: bold;
-    display: inline; /*same line*/
+    display: inline;
     margin-right: 0.5rem;
 }
 
@@ -173,8 +172,8 @@ dd{
     margin-right: 2rem;
 }
 
-dd::after{ /*Pseudo Element*/
-    content: '\A'; /*line break*/
+dd::after{
+    content: '\A';
     white-space: pre;
 }
 
@@ -213,12 +212,59 @@ h6 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-footer {
-    height: 5rem;
-    background-color: white;
+.multimedia{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.media-row{
+    display: flex;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.media-row img,
+.media-row video{
+    max-width: 320px;
+    max-height: 240px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+footer{
+    font-size: 1.5rem;
+    text-align:center;
+    padding:3rem;
+    justify-content: center;
+    font-size:2rem;
+    background: #fff;
+}
+.bootstrap-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.bootstrap-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.bootstrap-form {
+    width: 90%;
+    max-width: 900px;
 }
