@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    flex-grow: 1.0; /*show result box grows*/
+}
+
+.num_disp{
+    display: flex;
+    padding: 1rem;
+    text-align: center; /*The inputed value is justified to center*/
+    font-size: 1.5rem;
+    min-width: 0;
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    gap: 1rem;
+}
